@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h8S-AW-Qsi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Verify Code View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="VerifyCodeViewController" customModule="One_Time_Code" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter code that was sent to your phone..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wq7-mx-nDT">
+                                <rect key="frame" x="32" y="16" width="350" height="76.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rOs-o6-Chz" customClass="OneTimeTextField" customModule="One_Time_Code" customModuleProvider="target">
+                                <rect key="frame" x="32" y="124.5" width="350" height="49.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="codeChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="uj6-ae-7h9"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGv-Te-17a">
+                                <rect key="frame" x="32" y="389.5" width="350" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rOs-o6-Chz" secondAttribute="trailing" constant="32" id="6jo-EB-h1X"/>
+                            <constraint firstItem="Wq7-mx-nDT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="DVj-jG-Bgx"/>
+                            <constraint firstItem="sGv-Te-17a" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="M61-64-dR7"/>
+                            <constraint firstItem="rOs-o6-Chz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="YC0-4S-j3M"/>
+                            <constraint firstItem="sGv-Te-17a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="bpj-l0-Jgn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wq7-mx-nDT" secondAttribute="trailing" constant="32" id="n63-oT-BuR"/>
+                            <constraint firstItem="Wq7-mx-nDT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="s1a-vL-GBf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sGv-Te-17a" secondAttribute="trailing" constant="32" id="tGU-Pv-kII"/>
+                            <constraint firstItem="rOs-o6-Chz" firstAttribute="top" secondItem="Wq7-mx-nDT" secondAttribute="bottom" constant="32" id="vNR-XS-Fes"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lxR-aI-ic8"/>
+                    <connections>
+                        <outlet property="codeTextField" destination="rOs-o6-Chz" id="EhB-gT-3Aw"/>
+                        <outlet property="verificationStatusLabel" destination="sGv-Te-17a" id="c9L-ir-iU4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-184.05797101449278" y="59.598214285714285"/>
+        </scene>
+        <!--Enter Phone View Controller-->
+        <scene sceneID="seO-mI-IwS">
+            <objects>
+                <viewController id="h8S-AW-Qsi" customClass="EnterPhoneViewController" customModule="One_Time_Code" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EOn-Lm-43Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please Enter your Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYv-3b-yzm">
+                                <rect key="frame" x="32" y="76" width="350" height="76.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NFm-Ey-u70" userLabel="Phone" customClass="PhoneNumberTextField" customModule="One_Time_Code" customModuleProvider="target">
+                                <rect key="frame" x="32" y="184.5" width="350" height="49.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6a-um-PZ5">
+                                <rect key="frame" x="32" y="235" width="350" height="1"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="YXh-LB-aih"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JQ-Bh-vif" customClass="RoundButton" customModule="One_Time_Code" customModuleProvider="target">
+                                <rect key="frame" x="32" y="268" width="350" height="41"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="rounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="verify:" destination="h8S-AW-Qsi" eventType="touchUpInside" id="KJy-jj-PPu"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="b7n-0M-bt8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nug-UP-fll"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Nug-UP-fll" firstAttribute="trailing" secondItem="J6a-um-PZ5" secondAttribute="trailing" constant="32" id="9fU-vZ-Dbh"/>
+                            <constraint firstAttribute="trailing" secondItem="eYv-3b-yzm" secondAttribute="trailing" constant="32" id="E8z-XA-bfC"/>
+                            <constraint firstItem="J6a-um-PZ5" firstAttribute="leading" secondItem="Nug-UP-fll" secondAttribute="leading" constant="32" id="HrU-pt-LFF"/>
+                            <constraint firstItem="J6a-um-PZ5" firstAttribute="top" secondItem="NFm-Ey-u70" secondAttribute="bottom" constant="1" id="IE1-8q-ows"/>
+                            <constraint firstItem="NFm-Ey-u70" firstAttribute="leading" secondItem="Nug-UP-fll" secondAttribute="leading" constant="32" id="Nvg-cO-LKE"/>
+                            <constraint firstItem="eYv-3b-yzm" firstAttribute="leading" secondItem="Nug-UP-fll" secondAttribute="leading" constant="32" id="V6V-S2-scF"/>
+                            <constraint firstItem="6JQ-Bh-vif" firstAttribute="leading" secondItem="Nug-UP-fll" secondAttribute="leading" constant="32" id="Vsy-DZ-1uF"/>
+                            <constraint firstItem="6JQ-Bh-vif" firstAttribute="top" secondItem="J6a-um-PZ5" secondAttribute="bottom" constant="32" id="YHx-ci-hAq"/>
+                            <constraint firstItem="eYv-3b-yzm" firstAttribute="top" secondItem="Nug-UP-fll" secondAttribute="top" constant="32" id="pIA-U5-dwr"/>
+                            <constraint firstItem="Nug-UP-fll" firstAttribute="trailing" secondItem="NFm-Ey-u70" secondAttribute="trailing" constant="32" id="tr0-zb-cGM"/>
+                            <constraint firstItem="Nug-UP-fll" firstAttribute="trailing" secondItem="6JQ-Bh-vif" secondAttribute="trailing" constant="32" id="uDy-Zi-LRC"/>
+                            <constraint firstItem="NFm-Ey-u70" firstAttribute="top" secondItem="eYv-3b-yzm" secondAttribute="bottom" constant="32" id="zFF-Xe-KEb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="phoneTextField" destination="NFm-Ey-u70" id="RWP-bD-oJ8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zgw-6s-M4m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-917.39130434782612" y="59.598214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

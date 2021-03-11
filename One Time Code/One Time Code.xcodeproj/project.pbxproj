@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB18EDE125FABA40001A5B52 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18EDE025FABA40001A5B52 /* RoundButton.swift */; };
+		BB18EDE725FABF9A001A5B52 /* TwilioVerify.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB18EDE625FABF9A001A5B52 /* TwilioVerify.swift */; };
 		BBB2524925F9E73F0030AD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2524825F9E73F0030AD0A /* AppDelegate.swift */; };
 		BBB2524B25F9E73F0030AD0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2524A25F9E73F0030AD0A /* SceneDelegate.swift */; };
-		BBB2524D25F9E73F0030AD0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2524C25F9E73F0030AD0A /* ViewController.swift */; };
+		BBB2524D25F9E73F0030AD0A /* VerifyCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2524C25F9E73F0030AD0A /* VerifyCodeViewController.swift */; };
 		BBB2525025F9E73F0030AD0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB2524E25F9E73F0030AD0A /* Main.storyboard */; };
 		BBB2525225F9E7420030AD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBB2525125F9E7420030AD0A /* Assets.xcassets */; };
 		BBB2525525F9E7420030AD0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBB2525325F9E7420030AD0A /* LaunchScreen.storyboard */; };
 		BBB2528825F9E9940030AD0A /* OneTimeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2528725F9E9940030AD0A /* OneTimeTextField.swift */; };
 		BBB2529825F9F4520030AD0A /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB2529725F9F4520030AD0A /* AlertService.swift */; };
+		BBCAE29C25FAB38800795C3C /* PhoneNumberTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCAE29B25FAB38800795C3C /* PhoneNumberTextField.swift */; };
+		BBCAE2A125FAB56800795C3C /* EnterPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCAE2A025FAB56800795C3C /* EnterPhoneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,19 +39,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BB18EDE025FABA40001A5B52 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		BB18EDE625FABF9A001A5B52 /* TwilioVerify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioVerify.swift; sourceTree = "<group>"; };
 		BBB2524525F9E73F0030AD0A /* One Time Code.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "One Time Code.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB2524825F9E73F0030AD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBB2524A25F9E73F0030AD0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BBB2524C25F9E73F0030AD0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BBB2524C25F9E73F0030AD0A /* VerifyCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeViewController.swift; sourceTree = "<group>"; };
 		BBB2524F25F9E73F0030AD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BBB2525125F9E7420030AD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBB2525425F9E7420030AD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBB2525625F9E7420030AD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBB2525B25F9E7420030AD0A /* One Time CodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "One Time CodeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB2526625F9E7420030AD0A /* One Time CodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "One Time CodeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBB2528125F9E83E0030AD0A /* One Time Code.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "One Time Code.entitlements"; sourceTree = "<group>"; };
 		BBB2528725F9E9940030AD0A /* OneTimeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeTextField.swift; sourceTree = "<group>"; };
 		BBB2529725F9F4520030AD0A /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		BBCAE29B25FAB38800795C3C /* PhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextField.swift; sourceTree = "<group>"; };
+		BBCAE2A025FAB56800795C3C /* EnterPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterPhoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB18EDE525FABF89001A5B52 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BB18EDE625FABF9A001A5B52 /* TwilioVerify.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		BBB2523C25F9E73F0030AD0A = {
 			isa = PBXGroup;
 			children = (
@@ -96,18 +111,45 @@
 		BBB2524725F9E73F0030AD0A /* One Time Code */ = {
 			isa = PBXGroup;
 			children = (
-				BBB2528125F9E83E0030AD0A /* One Time Code.entitlements */,
 				BBB2525625F9E7420030AD0A /* Info.plist */,
 				BBB2525125F9E7420030AD0A /* Assets.xcassets */,
 				BBB2524825F9E73F0030AD0A /* AppDelegate.swift */,
 				BBB2524A25F9E73F0030AD0A /* SceneDelegate.swift */,
-				BBB2524C25F9E73F0030AD0A /* ViewController.swift */,
-				BBB2528725F9E9940030AD0A /* OneTimeTextField.swift */,
-				BBB2524E25F9E73F0030AD0A /* Main.storyboard */,
-				BBB2525325F9E7420030AD0A /* LaunchScreen.storyboard */,
-				BBB2529725F9F4520030AD0A /* AlertService.swift */,
+				BBCAE2A725FAB5AF00795C3C /* Storyboards */,
+				BBCAE2A625FAB5A000795C3C /* Controllers */,
+				BB18EDE525FABF89001A5B52 /* API */,
+				BBCAE2A525FAB57D00795C3C /* CustomUI */,
 			);
 			path = "One Time Code";
+			sourceTree = "<group>";
+		};
+		BBCAE2A525FAB57D00795C3C /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				BBB2528725F9E9940030AD0A /* OneTimeTextField.swift */,
+				BBCAE29B25FAB38800795C3C /* PhoneNumberTextField.swift */,
+				BBB2529725F9F4520030AD0A /* AlertService.swift */,
+				BB18EDE025FABA40001A5B52 /* RoundButton.swift */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		BBCAE2A625FAB5A000795C3C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BBCAE2A025FAB56800795C3C /* EnterPhoneViewController.swift */,
+				BBB2524C25F9E73F0030AD0A /* VerifyCodeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BBCAE2A725FAB5AF00795C3C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BBB2524E25F9E73F0030AD0A /* Main.storyboard */,
+				BBB2525325F9E7420030AD0A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,11 +282,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBB2524D25F9E73F0030AD0A /* ViewController.swift in Sources */,
+				BB18EDE125FABA40001A5B52 /* RoundButton.swift in Sources */,
+				BBB2524D25F9E73F0030AD0A /* VerifyCodeViewController.swift in Sources */,
 				BBB2524925F9E73F0030AD0A /* AppDelegate.swift in Sources */,
 				BBB2524B25F9E73F0030AD0A /* SceneDelegate.swift in Sources */,
+				BBCAE2A125FAB56800795C3C /* EnterPhoneViewController.swift in Sources */,
+				BB18EDE725FABF9A001A5B52 /* TwilioVerify.swift in Sources */,
 				BBB2528825F9E9940030AD0A /* OneTimeTextField.swift in Sources */,
 				BBB2529825F9F4520030AD0A /* AlertService.swift in Sources */,
+				BBCAE29C25FAB38800795C3C /* PhoneNumberTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

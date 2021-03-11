@@ -26,35 +26,22 @@
                                 <rect key="frame" x="32" y="124.5" width="350" height="49.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="codeChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="uj6-ae-7h9"/>
-                                </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verification Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sGv-Te-17a">
-                                <rect key="frame" x="32" y="389.5" width="350" height="29"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rOs-o6-Chz" secondAttribute="trailing" constant="32" id="6jo-EB-h1X"/>
                             <constraint firstItem="Wq7-mx-nDT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="DVj-jG-Bgx"/>
-                            <constraint firstItem="sGv-Te-17a" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="M61-64-dR7"/>
                             <constraint firstItem="rOs-o6-Chz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="YC0-4S-j3M"/>
-                            <constraint firstItem="sGv-Te-17a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="bpj-l0-Jgn"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Wq7-mx-nDT" secondAttribute="trailing" constant="32" id="n63-oT-BuR"/>
                             <constraint firstItem="Wq7-mx-nDT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="s1a-vL-GBf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sGv-Te-17a" secondAttribute="trailing" constant="32" id="tGU-Pv-kII"/>
                             <constraint firstItem="rOs-o6-Chz" firstAttribute="top" secondItem="Wq7-mx-nDT" secondAttribute="bottom" constant="32" id="vNR-XS-Fes"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lxR-aI-ic8"/>
                     <connections>
                         <outlet property="codeTextField" destination="rOs-o6-Chz" id="EhB-gT-3Aw"/>
-                        <outlet property="verificationStatusLabel" destination="sGv-Te-17a" id="c9L-ir-iU4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

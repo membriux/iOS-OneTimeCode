@@ -17,12 +17,17 @@ class EnterPhoneViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         phoneTextField.configure()
+        phoneTextField.addTarget(self, action: #selector(phoneChanged(_:)), for: .editingChanged)
+
+
         
     }
     
     override func viewDidAppear(_ animated: Bool) {
         phoneTextField.becomeFirstResponder()
     }
+    
+    
     
     @IBAction func verify(_ sender: Any) {
         // Send verification Request
@@ -31,11 +36,20 @@ class EnterPhoneViewController: UIViewController {
         }
     }
     
+    
+    @objc
+    func phoneChanged(_ textField: UITextField) {
+        print("Phone Change")
+    }
+    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let vc = segue.destination as? VerifyCodeViewController {
             vc.countryCode = self.countryCode
             vc.phone = self.phoneTextField.text
         }
     }
+    
+    
     
 }

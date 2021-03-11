@@ -21,23 +21,6 @@
 		BBCAE2A125FAB56800795C3C /* EnterPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBCAE2A025FAB56800795C3C /* EnterPhoneViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		BBB2525C25F9E7420030AD0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BBB2523D25F9E73F0030AD0A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BBB2524425F9E73F0030AD0A;
-			remoteInfo = "One Time Code";
-		};
-		BBB2526725F9E7420030AD0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BBB2523D25F9E73F0030AD0A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BBB2524425F9E73F0030AD0A;
-			remoteInfo = "One Time Code";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		BB18EDE025FABA40001A5B52 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		BB18EDE625FABF9A001A5B52 /* TwilioVerify.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioVerify.swift; sourceTree = "<group>"; };
@@ -49,8 +32,6 @@
 		BBB2525125F9E7420030AD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBB2525425F9E7420030AD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBB2525625F9E7420030AD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BBB2525B25F9E7420030AD0A /* One Time CodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "One Time CodeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BBB2526625F9E7420030AD0A /* One Time CodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "One Time CodeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB2528725F9E9940030AD0A /* OneTimeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeTextField.swift; sourceTree = "<group>"; };
 		BBB2529725F9F4520030AD0A /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		BBCAE29B25FAB38800795C3C /* PhoneNumberTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberTextField.swift; sourceTree = "<group>"; };
@@ -59,20 +40,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		BBB2524225F9E73F0030AD0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BBB2525825F9E7420030AD0A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BBB2526325F9E7420030AD0A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -102,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				BBB2524525F9E73F0030AD0A /* One Time Code.app */,
-				BBB2525B25F9E7420030AD0A /* One Time CodeTests.xctest */,
-				BBB2526625F9E7420030AD0A /* One Time CodeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,42 +137,6 @@
 			productReference = BBB2524525F9E73F0030AD0A /* One Time Code.app */;
 			productType = "com.apple.product-type.application";
 		};
-		BBB2525A25F9E7420030AD0A /* One Time CodeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BBB2527225F9E7420030AD0A /* Build configuration list for PBXNativeTarget "One Time CodeTests" */;
-			buildPhases = (
-				BBB2525725F9E7420030AD0A /* Sources */,
-				BBB2525825F9E7420030AD0A /* Frameworks */,
-				BBB2525925F9E7420030AD0A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BBB2525D25F9E7420030AD0A /* PBXTargetDependency */,
-			);
-			name = "One Time CodeTests";
-			productName = "One Time CodeTests";
-			productReference = BBB2525B25F9E7420030AD0A /* One Time CodeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		BBB2526525F9E7420030AD0A /* One Time CodeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BBB2527525F9E7420030AD0A /* Build configuration list for PBXNativeTarget "One Time CodeUITests" */;
-			buildPhases = (
-				BBB2526225F9E7420030AD0A /* Sources */,
-				BBB2526325F9E7420030AD0A /* Frameworks */,
-				BBB2526425F9E7420030AD0A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BBB2526825F9E7420030AD0A /* PBXTargetDependency */,
-			);
-			name = "One Time CodeUITests";
-			productName = "One Time CodeUITests";
-			productReference = BBB2526625F9E7420030AD0A /* One Time CodeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -219,14 +148,6 @@
 				TargetAttributes = {
 					BBB2524425F9E73F0030AD0A = {
 						CreatedOnToolsVersion = 12.4;
-					};
-					BBB2525A25F9E7420030AD0A = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = BBB2524425F9E73F0030AD0A;
-					};
-					BBB2526525F9E7420030AD0A = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = BBB2524425F9E73F0030AD0A;
 					};
 				};
 			};
@@ -244,8 +165,6 @@
 			projectRoot = "";
 			targets = (
 				BBB2524425F9E73F0030AD0A /* One Time Code */,
-				BBB2525A25F9E7420030AD0A /* One Time CodeTests */,
-				BBB2526525F9E7420030AD0A /* One Time CodeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -258,20 +177,6 @@
 				BBB2525525F9E7420030AD0A /* LaunchScreen.storyboard in Resources */,
 				BBB2525225F9E7420030AD0A /* Assets.xcassets in Resources */,
 				BBB2525025F9E73F0030AD0A /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BBB2525925F9E7420030AD0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BBB2526425F9E7420030AD0A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,34 +199,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BBB2525725F9E7420030AD0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BBB2526225F9E7420030AD0A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		BBB2525D25F9E7420030AD0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BBB2524425F9E73F0030AD0A /* One Time Code */;
-			targetProxy = BBB2525C25F9E7420030AD0A /* PBXContainerItemProxy */;
-		};
-		BBB2526825F9E7420030AD0A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = BBB2524425F9E73F0030AD0A /* One Time Code */;
-			targetProxy = BBB2526725F9E7420030AD0A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BBB2524E25F9E73F0030AD0A /* Main.storyboard */ = {
@@ -464,9 +342,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "One Time Code/One Time Code.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9VVT5BZ4Y5;
 				INFOPLIST_FILE = "One Time Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -484,9 +361,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "One Time Code/One Time Code.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 9VVT5BZ4Y5;
 				INFOPLIST_FILE = "One Time Code/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,86 +372,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		BBB2527325F9E7420030AD0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "One Time CodeTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.memo.One-Time-CodeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/One Time Code.app/One Time Code";
-			};
-			name = Debug;
-		};
-		BBB2527425F9E7420030AD0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "One Time CodeTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.memo.One-Time-CodeTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/One Time Code.app/One Time Code";
-			};
-			name = Release;
-		};
-		BBB2527625F9E7420030AD0A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "One Time CodeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.memo.One-Time-CodeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "One Time Code";
-			};
-			name = Debug;
-		};
-		BBB2527725F9E7420030AD0A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "One Time CodeUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.memo.One-Time-CodeUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "One Time Code";
 			};
 			name = Release;
 		};
@@ -596,24 +392,6 @@
 			buildConfigurations = (
 				BBB2527025F9E7420030AD0A /* Debug */,
 				BBB2527125F9E7420030AD0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BBB2527225F9E7420030AD0A /* Build configuration list for PBXNativeTarget "One Time CodeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BBB2527325F9E7420030AD0A /* Debug */,
-				BBB2527425F9E7420030AD0A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		BBB2527525F9E7420030AD0A /* Build configuration list for PBXNativeTarget "One Time CodeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BBB2527625F9E7420030AD0A /* Debug */,
-				BBB2527725F9E7420030AD0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

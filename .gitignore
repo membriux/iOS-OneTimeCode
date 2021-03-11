@@ -89,3 +89,5 @@ fastlane/test_output
 
 iOSInjectionProject/
 *.cer
+One Time Code/One Time Code/One Time Code.entitlements
+*.entitlements

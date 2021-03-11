@@ -48,6 +48,7 @@
 		BBB2528125F9E83E0030AD0A /* One Time Code.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "One Time Code.entitlements"; sourceTree = "<group>"; };
 		BBB2528725F9E9940030AD0A /* OneTimeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneTimeTextField.swift; sourceTree = "<group>"; };
 		BBB2529725F9F4520030AD0A /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		BBB252A625F9F9D00030AD0A /* aps_development.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps_development.cer; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				BBB2528125F9E83E0030AD0A /* One Time Code.entitlements */,
+				BBB252A625F9F9D00030AD0A /* aps_development.cer */,
 				BBB2525625F9E7420030AD0A /* Info.plist */,
 				BBB2525125F9E7420030AD0A /* Assets.xcassets */,
 				BBB2524825F9E73F0030AD0A /* AppDelegate.swift */,
